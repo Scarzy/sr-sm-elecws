@@ -128,3 +128,19 @@ The circuit for this is shown below:
 \item Repeat steps \ref{enum:des:integrator:set0} through \ref{enum:des:integrator:observe}
 \item Are there any similarities between any of the results?
 \end{enumerate}
+
+\subsection{Microcontroller}
+To demonstrate the use of a microcontroller the device has been preprogrammed to do a multiplication and display the output on two 7 segment displays.
+
+\begin{enumerate}
+\item Using the wire available, connect the outputs up to the 7 segment displays as shown in figure \ref{}
+\item Connect pin ? to $GND$
+\item \label{enum:des:uc:setGND} Connect pin ? to $GND$
+\item Connect wires between the pins and and either $V_{cc}$ or $GND$ to create numbers as inputs
+\begin{itemize}
+\item Pins ?-? form input A, and are shown on the first 7 segment display
+\item Pins ?-? form input B, and are shown on the second 7 segment display
+\end{itemize}
+\item \label{enum:des:uc:showout} Connect pin ? to $V_{cc}$, the two 7 segment displays now show a 2 digit number which is the result of $A \times B$
+\item Repeat steps \ref{enum:des:uc:setGND} through \ref{enum:des:uc:showout} to confirm it operates as expected
+\end{enumerate}
