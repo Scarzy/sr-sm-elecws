@@ -110,7 +110,22 @@ As a general rule the op-amp is not used by itself, but a number of components a
 \subsection{Microcontroller}
 
 The microcontroller is basically the brains of the outfit, it is in essence a mini computer, capable of calculating with a number of different values
+There are many parts inside a microcontroller, here is a diagram of one you will be using today.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The main blocks are the CPU, the SRAM, the flash memory, and the system bus.
+The CPU, or Central Processing Unit, is where the actual calculations take place.
+It is basically a simple adder/subtractor and is also capable of some simple logical functions.
+For each calculation it does it looks up some values that it has been programmed with, modifies the values to suit, and stores the result in an appropriate place.
+It then looks up the next set of values and repeats.
+
+The SRAM is where it stores all the values that it is currently working with, this is a very fast section of memory that values get stored in for quick and easy access.
+The flash is a slower, larger block of memory.
+Also flash memory is maintained while the power is turned off, while anything in the SRAM is lost.
+The flash memory is used for storing the program that the microcontroller runs, and any values that are needed between boot cycles.
+
+The system bus is basically a collection of wires which connect all the part together.
+All data transfering between blocks goes on this bus.
+This bus can often consist of two parts, a control bus which is used for sending instructions between blocks, and a data bus which is used for shifting data.
+
+All the other blocks are various peripherals which make it easier for the device to communicate with the outside world.
+A number of these are communication devices, which allow it to communicate to different devices in the circuit.
